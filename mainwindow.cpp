@@ -3,14 +3,20 @@
 #include "diametersdialog.h"
 #include "speeddialog.h"
 #include "transferlengthdialog.h"
+#include "messages.h"
+
+MainWindow::system_statuses system_status;
 
 MainWindow::MainWindow(QWidget *parent) :
     QMainWindow(parent),
     ui(new Ui::MainWindow)
 {
-
+   system_status = unconfigured;
    ui->setupUi(this);
-   this->setWindowTitle("Monument Wire Control v0.001");
+   if (system_status == unconfigured)
+        this->setWindowTitle(Apptitle + Unconfigured);
+   else
+       this->setWindowTitle(Apptitle);
 }
 
 MainWindow::~MainWindow()

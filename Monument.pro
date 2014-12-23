@@ -21,7 +21,8 @@ SOURCES += main.cpp\
 HEADERS  += mainwindow.h \
     diametersdialog.h \
     speeddialog.h \
-    transferlengthdialog.h
+    transferlengthdialog.h \
+    messages.h
 
 FORMS    += mainwindow.ui \
     diametersdialog.ui \

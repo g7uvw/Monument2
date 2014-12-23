@@ -23,9 +23,11 @@ class MainWindow : public QMainWindow
 public:
     explicit MainWindow(QWidget *parent = 0);
     ~MainWindow();
+    enum system_statuses {unconfigured, configured_but_not_run, diameters_configured, speed_configured, length_configured, running, paused, error};
 
 private:
     Ui::MainWindow *ui;
+
 
 protected:
 protected:
