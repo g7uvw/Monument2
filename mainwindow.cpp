@@ -4,6 +4,8 @@
 #include "speeddialog.h"
 #include "transferlengthdialog.h"
 #include "messages.h"
+#include "motor.h"
+#include "serialdialog.h"
 
 MainWindow::system_statuses system_status;
 
@@ -97,4 +99,10 @@ void MainWindow::on_pushButton_lockfreetop_clicked()
 void MainWindow::on_pushButton_lockfreebottom_clicked()
 {
     ui->pushButton_lockfreebottom->setText("Free Bottom Motor");
+}
+
+void MainWindow::on_actionSetup_Communications_triggered()
+{
+    SerialDialog *serdialog = new SerialDialog;
+    serdialog->show();
 }

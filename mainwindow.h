@@ -46,6 +46,7 @@ private slots:
     void on_pushButton_savecurpos_clicked();
     void on_pushButton_lockfreetop_clicked();
     void on_pushButton_lockfreebottom_clicked();
+    void on_actionSetup_Communications_triggered();
 };
 
 #endif // MAINWINDOW_H

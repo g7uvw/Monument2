@@ -76,7 +76,7 @@
       <number>5</number>
      </property>
     </widget>
-    <widget class="QWidget" name="">
+    <widget class="QWidget" name="layoutWidget">
      <property name="geometry">
       <rect>
        <x>60</x>
@@ -367,6 +367,7 @@
     <addaction name="actionSet_Spool_Sizes"/>
     <addaction name="actionSet_Transfer_Speed"/>
     <addaction name="actionSet_Transfer_Length"/>
+    <addaction name="actionSetup_Communications"/>
    </widget>
    <addaction name="menu_Configure"/>
   </widget>
@@ -392,6 +393,11 @@
   <action name="actionSet_Transfer_Length">
    <property name="text">
     <string>Set Transfer Length</string>
+   </property>
+  </action>
+  <action name="actionSetup_Communications">
+   <property name="text">
+    <string>Setup Serial Port</string>
    </property>
   </action>
  </widget>
